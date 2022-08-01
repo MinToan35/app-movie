@@ -64,7 +64,7 @@ const Detail = () => {
             </div>
           </div>
           <div>
-            <div>
+            <div className="flex flex-col items-center">
               <VideoList id={item.id} />
             </div>
             <div className="px-5">

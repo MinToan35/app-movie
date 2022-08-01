@@ -13,7 +13,7 @@ const VideoList = (props) => {
   }, [category, props.id]);
 
   return (
-    <div className="my-8 px-8 ">
+    <div className="my-8 px-8 max-w-[1080px]">
       {videos.map((item, i) => (
         <Video key={i} item={item} />
       ))}
