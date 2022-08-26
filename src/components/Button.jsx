@@ -5,8 +5,10 @@ const Button = (props) => {
   return (
     <div
       onClick={props.onClick ? () => props.onClick() : null}
-      className={`${btn} border-4 border-transparent  shadow-xl  hover:shadow-2xl  bg-primary ${
-        props.type === "small" ? "py-1 px-6 text-base" : "py-2 px-8 text-2xl"
+      className={`${btn} text-center border-4 border-transparent  shadow-xl  hover:shadow-2xl  bg-primary ${
+        props.type === "small"
+          ? "py-1 px-6 text-base"
+          : "py-2 px-8 text-xl md:text-2xl"
       }`}
     >
       {props.children}
@@ -18,8 +20,10 @@ export const OutlineButton = (props) => {
   return (
     <button
       onClick={props.onClick ? () => props.onClick() : null}
-      className={`${btn} border-[3px] border-white  bg-transparent hover:bg-white hover:text-primary ${
-        props.type === "small" ? "py-1 px-6 text-base" : "py-2 px-8 text-2xl"
+      className={`${btn} text-center border-[3px] border-white  bg-transparent hover:bg-white hover:text-primary ${
+        props.type === "small"
+          ? "py-1 px-6 text-base"
+          : "py-2 px-8 text-xl md:text-2xl"
       }`}
     >
       {props.children}
