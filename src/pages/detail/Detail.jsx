@@ -54,10 +54,10 @@ const Detail = () => {
                   </span>
                 ))}
               </div>
-              <p className="capitalize text-basic">{item.overview}</p>
+              <p className="capitalize text-basic mb-4">{item.overview}</p>
               <div>
                 <div>
-                  <h2>Casts</h2>
+                  <h2 className="mb-2">Casts</h2>
                 </div>
                 <CastList id={item.id} />
               </div>
