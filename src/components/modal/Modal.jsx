@@ -12,7 +12,7 @@ const Modal = ({ item, active, onClose }) => {
         active ? "visible opacity-100" : "invisible opacity-0"
       }`}
     >
-      <div className="p-8 bg-main_bg w-[80%] transition-duration: 600ms relative lg:w-[50%] modal__content ">
+      <div className="p-8 bg-black w-[80%] transition-duration: 600ms relative lg:w-[50%] modal__content ">
         <iframe ref={modalRef} width="100%" title="trailer" src={item}></iframe>
         <button onClick={onClose}>
           <i className="fa-solid fa-xmark absolute right-2 top-1 text-2xl cursor-pointer transition duration-300 text-white hover:text-primary"></i>
