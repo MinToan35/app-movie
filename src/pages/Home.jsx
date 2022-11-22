@@ -1,5 +1,5 @@
 import React from "react";
-import HeroSlide from "../components/hero-slide/HeroSlide";
+import HeroSlide from "../components/HeroSlide";
 import { Link } from "react-router-dom";
 import { OutlineButton } from "../components/Button";
 import MovieList from "../components/MovieList";

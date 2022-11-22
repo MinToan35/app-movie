@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import tmdbApi, { category, movieType } from "../../api/tmdbApi";
-import apiConfig from "../../api/apiConfig";
+import tmdbApi, { category, movieType } from "../api/tmdbApi";
+import apiConfig from "../api/apiConfig";
 import { useNavigate } from "react-router-dom";
-import Button, { OutlineButton } from "../Button";
-import Modal from "../modal/Modal";
+import Button, { OutlineButton } from "./Button";
+import Modal from "./Modal";
 const HeroSlide = () => {
   const [movieItems, setMovieItems] = useState([]);
   useEffect(() => {
